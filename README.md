@@ -1,6 +1,6 @@
 # Real time predictions using Azure ML
 
-![Architecture](https://raw.githubusercontent.com/jomit/real-time-predictions/master/images/real-time-architecture.png)
+![Architecture](https://github.com/jomit/real-time-predictions/blob/master/images/real-time-architecture.png)
 
 ### Business Case
 
