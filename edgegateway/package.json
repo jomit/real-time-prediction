@@ -1,0 +1,16 @@
+{
+  "name": "edgegateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/event-hubs": "^2.0.0",
+    "mssql": "^4.1.0",
+    "dotenv": "^6.0.0"
+  }
+}

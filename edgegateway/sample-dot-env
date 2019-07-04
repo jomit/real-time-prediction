@@ -1,0 +1,7 @@
+sqlUser=''
+sqlPassword=''
+sqlServer=''
+sqldb=''
+eventHubConnectionString=''
+eventHubName='qualityprediction'
+pullIntervalInMilliSeconds=5000
