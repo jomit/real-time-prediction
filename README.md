@@ -58,7 +58,7 @@ Improve quality and reduce production scrap by predicting the quality of a produ
 
     - Updated the function code with `function\index.js`. Make sure to replace the scoring api url.
 
-- Setup Edge Gateway which is a simple nodejs app. For more complex edge requirements we can also use [Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-as-gateway) along with [Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub)
+- Setup Edge Gateway `\edgegateway` which is a nodejs app. (For more complex edge requirements please use [Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-as-gateway) along with [Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub))
 
     - Rename the `sample-dot-env` file to `.env`
 
