@@ -58,9 +58,15 @@ Improve quality and reduce production scrap by predicting the quality of a produ
 
     - Updated the function code with `function\index.js`. Make sure to replace the scoring api url.
 
-- Edge Gateway Setup
+- Setup Edge Gateway which is a simple nodejs app. For more complex edge requirements we can also use [Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-as-gateway) along with [Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub)
 
-- Local SQL DB
+    - Rename the `sample-dot-env` file to `.env`
+
+    - Update the `eventHubConnectionString` and `eventHubName` values in the .env file
+
+    - (Optional) If integrating with local SQL DB than 
+        - Update the sql related values in the .env file
+        - Update code in `app.js` and `sqlserverdb.js`
 
 - Dashboard
 
