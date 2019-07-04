@@ -21,7 +21,7 @@ Improve quality and reduce production scrap by predicting the quality of a produ
 
 - Create a new [Data Science Virtual Machine](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro) and verify that the Jupyter notebook server is running on port 8000.
 
-- Deploy the ML Workspace using the `mlworkspace\template.json` template file
+- Deploy the [Azure ML Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-workspace) using the `mlworkspace\template.json` template file
 
     - `az group deployment create --resource-group <resource-group-name> --template-file <path-to-template>`
 
