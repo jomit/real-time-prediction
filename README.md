@@ -1,4 +1,6 @@
-# Real time predictions using Azure ML
+# Real-time predictions on manufacturing quality using Azure Machine Learning
+
+High level reference architecture based on real customer implementations:
 
 ![Architecture](https://github.com/jomit/real-time-predictions/blob/master/images/real-time-architecture.png)
 
