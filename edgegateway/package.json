@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@azure/event-hubs": "^2.0.0",
+    "dotenv": "^6.0.0",
     "mssql": "^4.1.0",
-    "dotenv": "^6.0.0"
+    "ws": "^7.0.1"
   }
 }

@@ -1,6 +1,7 @@
 require("dotenv").load();
 
 const { EventHubClient } = require("@azure/event-hubs");
+const WebSocket = require("ws");
 //var sqlserverdb = require("./sqlserverdb");
 var tempdb = require("./tempdb");
 var logger = require("./logger");
@@ -22,7 +23,7 @@ async function sendSensorData() {
 }
 
 async function sendEventHubMessage(batchId, sensorData) {
-  const client = EventHubClient.createFromConnectionString(connectionString, eventHubsName);
+  const client = EventHubClient.createFromConnectionString(connectionString, eventHubsName, {webSocket: WebSocket});
   var eventData = {
     "body": { data: sensorData, batchId: batchId }
   }

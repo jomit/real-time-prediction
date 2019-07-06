@@ -72,14 +72,11 @@ Improve quality and reduce production scrap by predicting the quality of a produ
         - Update the sql related values in the .env file
         - Update code in `app.js` and `sqlserverdb.js`
 
-#### Retraining Pipeline (In Progress...)
-
-- Query .avro files captured from event hubs...
-- Create retraining dataset and merge it with the training dataset...
-- Retrain the model and deploy the new version of the scoring api...
-
 ### Additional Resources
 
+- [Scalability, Monitoring and Security considerations for using Azure Kubernetes Service to deploy ML Models](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/ai/realtime-scoring-python#scalability-considerations)
 
+- [Scaling Azure Funcions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale)
 
+- [Scaling Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-scalability)
 
