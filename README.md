@@ -64,11 +64,9 @@ Improve quality and reduce production scrap by predicting the quality of a produ
 
     - Update the `eventHubConnectionString` and `eventHubName` values in the .env file
 
-    - (Optional) If integrating with local SQL DB than 
+    - (Optional) If integrating with local SQL DB 
         - Update the sql related values in the .env file
         - Update code in `app.js` and `sqlserverdb.js`
-
-- Dashboard
 
 #### Retraining Pipeline
 

@@ -12,12 +12,14 @@ module.exports = async function (context, eventHubMessage) {
     };
     var results = await request(options);
     var prediction = JSON.parse(results).result;
-    var document = {
-        batchid: eventHubMessage.batchId,
-        inputData: eventHubMessage.data,
-        prediction: prediction
-    };
-    context.log(document)
-    context.bindings.predictionResultDocument = JSON.stringify(document);
+    if(prediction) {
+        var document = {
+            batchid: eventHubMessage.batchId,
+            inputData: eventHubMessage.data,
+            prediction: prediction[0]
+        };
+        context.log(document)
+        context.bindings.predictionResultDocument = JSON.stringify(document);
+    }
     context.done();
 };
