@@ -29,9 +29,11 @@ Improve quality and reduce production scrap by predicting the quality of a produ
 
 - Upload all the notebooks from `mlnotebooks` folder to the Jupyter notebook server using the Web UI.
 
-- Run all the notebooks as per the sequence to build and deploy the initial model. 
+- Run all notebooks as per the sequence to build and deploy the initial model. 
 
     - Make sure to update the parameters in the notebook as per the instructions.
+
+    - For production deployments use [Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-deploy-and-where#aks) to deploy the scoring api
 
 #### Inference Pipeline
 
@@ -70,9 +72,11 @@ Improve quality and reduce production scrap by predicting the quality of a produ
         - Update the sql related values in the .env file
         - Update code in `app.js` and `sqlserverdb.js`
 
-#### Retraining Pipeline
+#### Retraining Pipeline (In Progress...)
 
-- TODO...
+- Query .avro files captured from event hubs...
+- Create retraining dataset and merge it with the training dataset...
+- Retrain the model and deploy the new version of the scoring api...
 
 ### Additional Resources
 
